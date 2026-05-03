@@ -3,10 +3,10 @@ import Marquee from "react-fast-marquee";
 import Link from "next/link";
 
 const news = [
-  { _id: "1", title: "Master Next.js 14 App Router is now live!", tag: "New", link: "/courses/1" },
-  { _id: "2", title: "Flash Sale: 50% discount on all Development courses.", tag: "Offer", link: "/courses" },
-  { _id: "3", title: "Congratulations to our top 5 graduates of this month!", tag: "Update", link: "#" },
-  { _id: "4", title: "New profile features added for better user experience.", tag: "System", link: "/profile" },
+  { _id: "1", title: "Master Next.js 14 App Router is now live!", tag: "New"},
+  { _id: "2", title: "Flash Sale: 50% discount on all Development courses.", tag: "Offer"},
+  { _id: "3", title: "Congratulations to our top 5 graduates of this month!", tag: "Update"},
+  { _id: "4", title: "New profile features added for better user experience.", tag: "System"},
 ];
 
 const BreakingNews = () => {
@@ -31,11 +31,11 @@ const BreakingNews = () => {
               <span className="text-[10px] font-bold text-gray-400 border border-gray-200 px-1.5 py-0.5 rounded mr-3">
                 {item.tag}
               </span>
-              <Link
-                href={item.link}
+              <ul
+                key={item._id}
                 className="text-[13px] font-medium text-gray-600 hover:text-blue-600 transition-colors">
                 {item.title}
-              </Link>
+              </ul>
             </div>
           ))}
         </Marquee>
