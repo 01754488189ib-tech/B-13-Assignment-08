@@ -28,10 +28,10 @@ const RegisterPage = () => {
         });
 
         if (error) {
-            alert(error.message);
+            toast.error(error.message);
         }
         if (res) {
-            alert("Thank you for registering with Skill Sphere");
+            toast.success("Thank you for registering with Skill Sphere");
         }
     };
 

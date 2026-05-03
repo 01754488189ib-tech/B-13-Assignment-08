@@ -6,6 +6,7 @@ import { CgDanger } from "react-icons/cg";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import { FaUserNinja } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -109,7 +110,15 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  onClick={async () => await authClient.signOut()}
+                  onClick={async () => {
+                    await authClient.signOut({
+                      fetchOptions: {
+                        onSuccess: () => {
+                          toast.success("Successfully logged out! See you soon.");
+                        },
+                      },
+                    });
+                  }}
                   className="text-red-500 hover:bg-red-500/10">
                   Logout
                 </button>

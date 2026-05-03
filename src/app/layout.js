@@ -3,6 +3,7 @@ dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from 'react-toastify';
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light" className={`h-full antialiased`}>
       <body className={`${poppins.className} min-h-full flex flex-col`}>
         {children}
+        <ToastContainer />
       </body>
     </html>
   );

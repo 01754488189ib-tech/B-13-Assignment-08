@@ -25,10 +25,10 @@ const LoginPage = () => {
         });
 
         if (error) {
-            alert(error.message || "Login failed. Please try again.");
+            toast.error(error.message || "Login failed. Please try again.");
         }
         if (res) {
-            alert("Welcome to Skill Sphere");
+            toast.success("Welcome to Skill Sphere");
         }
     };
 
@@ -39,7 +39,7 @@ const LoginPage = () => {
                 callbackURL: "/",
             });
         } catch (err) {
-            alert("Google sign-in failed.");
+            toast.error("Google sign-in failed.");
         }
     };
 
