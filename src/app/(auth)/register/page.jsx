@@ -28,10 +28,10 @@ const RegisterPage = () => {
         });
 
         if (error) {
-            toast.error(error.message);
+            alert(error.message);
         }
         if (res) {
-            toast.success("Registration successful! Please check your email to verify your account.");
+            alert("Thank you for registering with Skill Sphere");
         }
     };
 
