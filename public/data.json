@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Web Development Bootcamp",
+        "instructor": "John Doe",
+        "duration": "20 hours",
+        "rating": 4.8,
+        "level": "Beginner",
+        "description": "Master HTML, CSS, and JavaScript to build modern websites from absolute scratch.",
+        "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=600&auto=format&fit=crop",
+        "category": "Development"
+    },
+    {
+        "id": 2,
+        "title": "Advanced Next.js 14 Mastery",
+        "instructor": "Jane Smith",
+        "duration": "15 hours",
+        "rating": 4.9,
+        "level": "Advanced",
+        "description": "Deep dive into App Router, Server Actions, and advanced caching patterns in Next.js.",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop",
+        "category": "Development"
+    },
+    {
+        "id": 3,
+        "title": "UI/UX Design Essentials",
+        "instructor": "Alex Rivera",
+        "duration": "12 hours",
+        "rating": 4.7,
+        "level": "Beginner",
+        "description": "Learn Figma and user-centered design principles to create stunning interfaces.",
+        "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=600&auto=format&fit=crop",
+        "category": "Design"
+    },
+    {
+        "id": 4,
+        "title": "Python for Data Science",
+        "instructor": "Dr. Sarah Khan",
+        "duration": "25 hours",
+        "rating": 4.6,
+        "level": "Intermediate",
+        "description": "Analyze data, create visualizations, and build machine learning models with Python.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
+        "category": "Data Science"
+    },
+    {
+        "id": 5,
+        "title": "Full-Stack MERN Stack",
+        "instructor": "Ibrahim Khalil",
+        "duration": "40 hours",
+        "rating": 5.0,
+        "level": "Intermediate",
+        "description": "Build powerful full-stack applications using MongoDB, Express, React, and Node.js.",
+        "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=600&auto=format&fit=crop",
+        "category": "Development"
+    },
+    {
+        "id": 6,
+        "title": "Digital Marketing Strategy",
+        "instructor": "Michael Brown",
+        "duration": "10 hours",
+        "rating": 4.5,
+        "level": "Beginner",
+        "description": "Master SEO, SEM, and social media marketing to grow your business online.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+        "category": "Marketing"
+    }
+]
