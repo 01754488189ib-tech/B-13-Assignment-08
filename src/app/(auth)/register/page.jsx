@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
+import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 const RegisterPage = () => {
     const {
@@ -9,9 +11,23 @@ const RegisterPage = () => {
         handleSubmit,
         formState: { errors }
     } = useForm()
-    const handleRegister = (data) => {
-        console.log(data);
+    const handleRegister = async (data) => {
         const { fullName, photoUrl, email, password } = data;
+
+        const { data: res, error } = await authClient.signUp.email({
+            name: fullName,
+            email: email,
+            password: password,
+            image: photoUrl,
+            callbackURL: "/",
+        });
+        console.log(res, error);
+        if (error) {
+            toast.error(error.message);
+        }
+        if (res) {
+            toast.success("Registration successful! Please check your email to verify your account.");
+        }
     };
 
     return (
