@@ -120,7 +120,6 @@ const RegisterPage = () => {
                         </div>
                         {errors.password && <p className="text-red-500 text-[10px] font-bold mt-1 ml-1">{errors.password.message}</p>}
                     </div>
-
                     <div className="flex justify-end px-1">
                         <Link
                             href="#"

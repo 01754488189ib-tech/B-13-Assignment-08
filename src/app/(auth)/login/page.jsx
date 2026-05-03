@@ -31,7 +31,6 @@ const LoginPage = () => {
             toast.success("Welcome to Skill Sphere");
         }
     };
-
     const handleGoogleSignin = async () => {
         try {
             await authClient.signIn.social({
