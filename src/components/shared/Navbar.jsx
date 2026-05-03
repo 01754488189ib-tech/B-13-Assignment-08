@@ -23,12 +23,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow-2xl rounded-2xl w-64 gap-3"
+            className="menu bg-gray-900/70 menu-sm dropdown-content mt-3 z-[1] p-4 shadow-2xl rounded-2xl w-64 gap-3"
           >
-            <li><Link href="/category" className="text-gray-900 font-bold active:bg-blue-600">Home</Link></li>
-            <li><Link href="/courses" className="text-gray-900 font-bold active:bg-blue-600">Courses</Link></li>
-            <li><Link href="/about-us" className="text-gray-900 font-bold active:bg-blue-600">About</Link></li>
-            <li><Link href="/career" className="text-gray-900 font-bold active:bg-blue-600">Career</Link></li>
+            <li><Link href="/category" className="text-gray-100 font-bold active:bg-blue-600">Home</Link></li>
+            <li><Link href="/courses" className="text-gray-100 font-bold active:bg-blue-600">Courses</Link></li>
+            <li><Link href="/about-us" className="text-gray-100 font-bold active:bg-blue-600">About</Link></li>
+            <li><Link href="/career" className="text-gray-100 font-bold active:bg-blue-600">Career</Link></li>
             <li><Link href="/not-found" className="text-red-600 underline">Not Found</Link></li>
             {!user && (
               <li className="mt-2 border-t border-gray-800 pt-2">
@@ -97,16 +97,16 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl  backdrop-blur-md rounded-xl gap-1"
+              className="menu bg-gray-900/70 menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl  backdrop-blur-md rounded-xl gap-1"
             >
               <li className="px-4 py-2 mb-1">
-                <p className="text-xs text-gray-900 truncate">{user.email}</p>
+                <p className="text-xs text-gray-200 truncate">{user.email}</p>
               </li>
               <li>
-                <button className="text-gray-900 hover:text-white">Dashboard</button>
+                <button className="text-gray-200">Dashboard</button>
               </li>
               <li>
-                <button className="text-gray-900 hover:text-white">Settings</button>
+                <button className="text-gray-200">Settings</button>
               </li>
               <li>
                 <button
@@ -119,7 +119,7 @@ const Navbar = () => {
                       },
                     });
                   }}
-                  className="text-red-500 hover:bg-red-500/10">
+                  className="text-red-500 hover:bg-red-600/10 hover:text-red-700 transition-all">
                   Logout
                 </button>
               </li>
